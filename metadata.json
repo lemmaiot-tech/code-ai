@@ -1,0 +1,5 @@
+{
+  "name": "Content to Code AI",
+  "description": "An AI-powered tool that converts visual designs, existing HTML, or Figma frames into responsive, production-ready code. Simply provide your content, select an AI model and output format, and let the AI generate the code for you.",
+  "requestFramePermissions": []
+}

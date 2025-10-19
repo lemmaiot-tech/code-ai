@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' rx='8' fill='%231F2937'/%3E%3Cpath d='M8 12C8 10.8954 8.89543 10 10 10H18V30H10C8.89543 30 8 29.1046 8 28V12Z' fill='%237C3AED'/%3E%3Cpath d='M22 12L26 12' stroke='%23EC4899' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M22 19L32 19' stroke='%23EC4899' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M22 26L28 26' stroke='%23EC4899' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content to Code AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#7C3AED',
+              'secondary': '#EC4899',
+              'background': '#111827',
+              'surface': '#1F2937',
+              'on-surface': '#F9FAFB',
+              'on-surface-secondary': '#9CA3AF',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+                'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'pulse-medium': 'pulse 1.2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'pulse-slow': 'pulse 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Code Viewer Theme */
+      .code-viewer {
+        background-color: #282a36; /* Dracula background */
+        color: #f8f8f2; /* Dracula foreground */
+        font-family: 'Fira Code', 'Courier New', monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0",
+    "jszip": "https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
